@@ -34,3 +34,10 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 # AcademiaJuridica-Next
 # AcademiaJuridica-Next
+
+#componentes 
+https://ui.shadcn.com/docs/components/button
+
+#Athetication 
+https://clerk.com/docs/references/nextjs/custom-signup-signin-pages
+
