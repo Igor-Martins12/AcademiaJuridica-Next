@@ -41,3 +41,10 @@ https://ui.shadcn.com/docs/components/button
 #Athetication 
 https://clerk.com/docs/references/nextjs/custom-signup-signin-pages
 
+# UI
+$ npx shadcn-ui@latest add sheet
+
+$ npx shadcn-ui@latest add form 
+
+$ npx shadcn-ui@latest add input
+
