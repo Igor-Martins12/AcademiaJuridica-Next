@@ -48,3 +48,7 @@ $ npx shadcn-ui@latest add form
 
 $ npx shadcn-ui@latest add input
 
+$ npm i react-hot-toast
+
+$ npm i -D prisma
+
