@@ -5,6 +5,7 @@ import { redirect } from "next/navigation";
 import { db } from "@/lib/db";
 import { IconBadge } from "@/components/icon.badge";
 import { LayoutDashboard } from "lucide-react";
+import { TitleForm } from "./_components/title-form";
 
 const CourseIdPage = async ({
   params
@@ -59,6 +60,11 @@ const CourseIdPage = async ({
                     Customize your course
                   </h2>
                 </div>
+                <TitleForm
+                initialData={course}
+                courseId={course.id}
+                
+                />
               </div>
             </div>
         </div>
