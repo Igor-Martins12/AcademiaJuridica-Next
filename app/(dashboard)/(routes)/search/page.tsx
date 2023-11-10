@@ -1,7 +1,7 @@
 const SearchPage = () => {
     return ( 
         <div>
-            this is a search Page!
+            esta é uma página de pesquisa!
         </div>
      );
 }

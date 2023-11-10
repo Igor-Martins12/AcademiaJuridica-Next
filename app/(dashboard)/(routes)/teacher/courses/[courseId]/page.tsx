@@ -6,6 +6,7 @@ import { db } from "@/lib/db";
 import { IconBadge } from "@/components/icon.badge";
 import { LayoutDashboard } from "lucide-react";
 import { TitleForm } from "./_components/title-form";
+import { DescriptionForm } from "./_components/description-form";
 
 const CourseIdPage = async ({
   params
@@ -45,10 +46,10 @@ const CourseIdPage = async ({
             <div className="flex items-center justify-between">
               <div className="flex flex-col gap-y-2">
                 <h1 className="text-2xl font-medium">
-                  Couses setup
+                Configuração de cursos
                 </h1>
                 <span className="text-sm text-slate-700">
-                  Complete all fields { completionText }
+                  Preencha todos os campos { completionText }
                 </span>
               </div>
             </div>
@@ -57,10 +58,15 @@ const CourseIdPage = async ({
                 <div className="flex items-center gap-x-2">
                   <IconBadge icon={LayoutDashboard} />
                   <h2 className="text-xl">
-                    Customize your course
+                    Personalize seu curso
                   </h2>
                 </div>
                 <TitleForm
+                initialData={course}
+                courseId={course.id}
+                
+                />
+                <DescriptionForm
                 initialData={course}
                 courseId={course.id}
                 

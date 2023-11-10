@@ -49,10 +49,10 @@ const CreatePage = () => {
         <div className="max-w-5xl mx-auto flex md:items-center md:justify-center h-full p-6">
             <div>
                 <h1 className="text-2xl">
-                    Name your course 
+                    Dê um nome ao seu curso 
                 </h1>
                 <p className="text-sm text-slate-600">
-                    What would you like to name your couses? Don't worry, you can change this later.
+                Como você gostaria de nomear seus cursos? Não se preocupe, você pode alterar isso mais tarde.
                 </p>
                 <Form {...form}>
                     <form 
@@ -65,17 +65,17 @@ const CreatePage = () => {
                             render={({ field }) => (
                               <FormItem>
                                 <FormLabel>
-                                    Course title
+                                    Título do curso
                                 </FormLabel>
                                 <FormControl>
                                     <Input
                                         disabled={isSubmitting}
-                                        placeholder="e.g. 'Advanced web development'"
+                                        placeholder="por exemplo. 'Desenvolvimento web avançado'"
                                         {...field} 
                                     />
                                 </FormControl>
                                 <FormDescription>
-                                    What will you teach in this course?
+                                    O que você vai ensinar neste curso?
                                 </FormDescription>
                                 <FormMessage />
                               </FormItem>
@@ -88,7 +88,7 @@ const CreatePage = () => {
                                  variant="ghost"
 
                                 >
-                                    Cancel
+                                    Cancelar
                                 </Button>
                             </Link>
                                 <Button 
