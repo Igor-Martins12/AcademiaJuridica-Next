@@ -35,10 +35,12 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 # AcademiaJuridica-Next
 # AcademiaJuridica-Next
 
-#componentes 
+
+#COMPONENTES
 https://ui.shadcn.com/docs/components/button
 
-#Athetication 
+
+#ATHETICATION
 https://clerk.com/docs/references/nextjs/custom-signup-signin-pages
 
 # UI
@@ -52,12 +54,15 @@ $ npx shadcn-ui@latest add textarea
 
 $ npm i react-hot-toast
 
-# banco de dados 
+# BANCO DE DADOS  
 
 $ npm i -D prisma
 
 npx prisma studio
 
+# UPLOAD
+
+https://docs.uploadthing.com/getting-started/appdir
 
 
 

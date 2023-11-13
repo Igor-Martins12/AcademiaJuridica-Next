@@ -21,7 +21,7 @@ import { Input } from "@/components/ui/input";
 
 const formSchema = z.object({
     title: z.string().min(1, {
-        message: "Title is required",
+        message: "O título é obrigatório",
     }),
 });
 
@@ -40,9 +40,9 @@ const CreatePage = () => {
        try {
         const response = await axios.post("/api/courses", values);
         router.push(`/teacher/courses/${response.data.id}`);
-        toast.success("Course created");
+        toast.success("Curso atualizado");
        } catch {
-       toast.error("Something went wrong");
+       toast.error("Algo deu errado");
        }
     }
     return ( 
