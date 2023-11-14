@@ -68,5 +68,10 @@ npx prisma studio
 
 https://docs.uploadthing.com/getting-started/appdir
 
+As categorias do curso fica na pasta SCRIPTS
+
+se for adicionar mais coisas utilizar o mesmo script so add o novo curso 
+
+
 
 
