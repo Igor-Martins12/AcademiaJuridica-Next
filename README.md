@@ -48,6 +48,10 @@ $ npx shadcn-ui@latest add sheet
 
 $ npx shadcn-ui@latest add form 
 
+$ npx shadcn-ui@latest add command 
+
+$ npx shadcn-ui@latest add popover
+
 $ npx shadcn-ui@latest add input
 
 $ npx shadcn-ui@latest add textarea
