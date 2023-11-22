@@ -56,6 +56,8 @@ $ npx shadcn-ui@latest add input
 
 $ npx shadcn-ui@latest add textarea
 
+$ npx shadcn-ui@latest add badge
+
 $ npm i react-hot-toast
 
 # BANCO DE DADOS  
