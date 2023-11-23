@@ -11,7 +11,7 @@ export async function POST(
         const { title } = await req.json();
 
         if (!userId ){ 
-            return new NextResponse("Não autorizado", { status: 401 });
+            return new NextResponse("unathorized", { status: 401 });
         }
 
         const courseOwner = await db.course.findUnique({
@@ -22,7 +22,7 @@ export async function POST(
         }); 
 
         if (!courseOwner) {
-            return new NextResponse("Não autorizado", { status: 401})
+            return new NextResponse("unathorized", { status: 401})
         }
 
         const lastChapter = await db.chapter.findFirst({
@@ -47,6 +47,6 @@ export async function POST(
          return NextResponse.json(chapter);
     } catch (error) {
         console.log("CHAPTERS", error);
-        return new NextResponse("Erro interno", { status: 500 });
+        return new NextResponse("Internal Error", { status: 500 });
     }
 }

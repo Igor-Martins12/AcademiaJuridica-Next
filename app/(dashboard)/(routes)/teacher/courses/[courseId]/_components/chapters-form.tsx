@@ -128,7 +128,7 @@ export const ChaptersForm = ({
                 )}>
                    {!initialData.chapters.length && "Não tem capítulos"}
                    <ChaptersList 
-                    onEdit={() => {}}
+                    onEdit={onEdit}
                     onReorder={onReorder}
                     items={initialData.chapters || []}
                    />

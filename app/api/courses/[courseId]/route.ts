@@ -12,7 +12,7 @@ export async function PATCH(
         const values = await req.json();
 
         if (!userId) {
-            return new NextResponse("Não autorizado", { status: 500 });
+            return new NextResponse("unathorized", { status: 500 });
         }
 
         const course = await db.course.update({
@@ -29,6 +29,6 @@ export async function PATCH(
         return NextResponse.json(course);
     } catch (error) {
         console.log("[CORSES_ID]", error);
-        return new NextResponse("Erro interno", { status: 500 });
+        return new NextResponse("Internal Error", { status: 500 });
     }
 }
