@@ -78,7 +78,7 @@ const ChapterIdPage = async({
               initialData={chapter}
               courseId={params.courseId}
               chapterId={params.chapterId}
-            />
+            />    
           </div>
         </div>
       </div>
