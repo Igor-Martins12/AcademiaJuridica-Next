@@ -75,7 +75,10 @@ https://docs.uploadthing.com/getting-started/appdir
 As categorias do curso fica na pasta SCRIPTS
 
 se for adicionar mais coisas utilizar o mesmo script so add o novo curso 
+# vídeo
 
+ npm i @mux/mux-player-react
 
+  npm i @mux/mux-node
 
 
