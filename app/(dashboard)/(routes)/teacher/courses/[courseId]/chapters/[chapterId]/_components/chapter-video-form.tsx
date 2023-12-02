@@ -13,6 +13,7 @@ import { Chapter, MuxData } from "@prisma/client";
 import  MuxPlayer  from "@mux/mux-player-react";
 import { Button } from "@/components/ui/button";
 import { FileUpload } from "@/components/file-upload";
+import { ExternalVideoSearch } from "./video-search-form";
 
 interface ChapterVideoFormProps {
     initialData: Chapter & { muxData?: MuxData | null};
@@ -86,6 +87,7 @@ export const ChapterVideoForm = ({
                             }
                         }}
                     />
+                     <ExternalVideoSearch />
                     <div className="text-xs text-muted-foreground mt-4">
                         carregue o vídeo deste capítulo
                     </div>
