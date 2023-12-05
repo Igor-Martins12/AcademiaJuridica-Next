@@ -10,6 +10,7 @@ import { ChapterAccessForm } from "./_components/chapter-access-form copy";
 import { ChapterVideoForm } from "./_components/chapter-video-form";
 import { Banner } from "@/components/banner";
 import { ChapterActions } from "./_components/chapter-actions";
+import { ExternalVideoSearch } from "./_components/video-search-form";
 
 
 
@@ -130,6 +131,10 @@ const ChapterIdPage = async ({
               courseId={params.courseId}
               chapterId={params.chapterId}
             /> 
+            <ExternalVideoSearch
+              initialData={chapter}
+              courseId={params.courseId}
+              chapterId={params.chapterId} />
           </div>
         </div>
       </div>
