@@ -5,11 +5,12 @@ import ReactPlayer from 'react-player';
 import { Button } from "@/components/ui/button";
 import toast from "react-hot-toast";
 import axios from "axios";
-import { Chapter,  Video } from "@prisma/client";
+import { Chapter,  ReactData } from "@prisma/client";
+import { useRouter } from "next/navigation";
 
 
-interface ChapterVideoFormProps {
-  initialData: Chapter & { video?: Video| null};
+interface ExternalVideoSearchProps {
+  initialData: Chapter & { reactData?: ReactData| null};
   courseId: string;
   chapterId: string;
 };
@@ -18,10 +19,11 @@ export const ExternalVideoSearch = ({
   initialData,
   courseId,
   chapterId
-}:ChapterVideoFormProps) => {
+  
+}:ExternalVideoSearchProps) => {
   const [externalVideoUrl, setExternalVideoUrl] = useState("");
   const [loading, setLoading] = useState(false);
-  const [searchedVideoUrl, setSearchedVideoUrl] = useState<string | null>(null);
+  const [searchedVideoUrl, setSearchedVideoUrl] = useState("");
 
   const searchExternalVideo = async () => {
     try {
@@ -42,7 +44,8 @@ export const ExternalVideoSearch = ({
     try {
       console.log("Valor de searchedVideoUrl:", searchedVideoUrl);
       // Faz uma solicitação para a API para salvar a URL do vídeo
-      await axios.patch("/api/saveVideo", searchedVideoUrl);
+
+        await axios.post(`/api/courses/${courseId}/chapters/${chapterId}/saveVideo`, { urlVideo: searchedVideoUrl});
       toast.success("Vídeo salvo com sucesso!");
     } catch (error) {
       toast.error("Erro ao salvar o vídeo na API");
@@ -58,11 +61,11 @@ export const ExternalVideoSearch = ({
         value={externalVideoUrl}
         onChange={(e) => setExternalVideoUrl(e.target.value)}
       />
-      <Button onClick={searchExternalVideo} className="btn mt-2">
+      <Button onClick={() => searchExternalVideo()} className="btn mt-2">
         Pesquisar Vídeo
       </Button>
       {loading && <p>Procurando vídeo...</p>}
-      {searchedVideoUrl && (
+      {searchedVideoUrl &&  (
         <div className="flex items-center justify-center">
           <div className="relative aspect-video mt-2">
             <ReactPlayer url={searchedVideoUrl} controls width="100%" height="100%" />

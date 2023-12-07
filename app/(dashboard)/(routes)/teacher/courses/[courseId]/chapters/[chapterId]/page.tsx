@@ -6,7 +6,7 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 import { ChapterTitleForm } from "./_components/chapter-title-form";
 import { ChapterDescriptionForm } from "./_components/chapter-description-form";
-import { ChapterAccessForm } from "./_components/chapter-access-form copy";
+import { ChapterAccessForm } from "./_components/chapter-access-form";
 import { ChapterVideoForm } from "./_components/chapter-video-form";
 import { Banner } from "@/components/banner";
 import { ChapterActions } from "./_components/chapter-actions";
@@ -17,7 +17,7 @@ import { ExternalVideoSearch } from "./_components/video-search-form";
 const ChapterIdPage = async ({
   params
 }: {
-  params: { courseId: string; chapterId: string }
+  params: { courseId: string; chapterId: string; exVideoId: string }
 }) => {
 
   const { userId } = auth();
@@ -134,7 +134,8 @@ const ChapterIdPage = async ({
             <ExternalVideoSearch
               initialData={chapter}
               courseId={params.courseId}
-              chapterId={params.chapterId} />
+              chapterId={params.chapterId}
+               />
           </div>
         </div>
       </div>
