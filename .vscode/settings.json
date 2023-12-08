@@ -1,4 +1,8 @@
-{
+{"code-runner.executorMap": {
+    "javascript": "node",
+    "typescript": "ts-node",
+   
+},
     "cSpell.words": [
         "nextjs"
     ]

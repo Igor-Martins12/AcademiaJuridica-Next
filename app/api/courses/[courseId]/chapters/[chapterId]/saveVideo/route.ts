@@ -41,13 +41,13 @@ export async function POST(
       return new NextResponse("Não autorizado", { status: 401 });
     }
     console.log(urlVideo)
-    const ReactData = {
-      chapterId: params.chapterId,
-      urlVideo: urlVideo,
-      // Adicione outras propriedades conforme necessário
-    };
-    
-    await db.reactData.create({ data: ReactData });
+    const reactData = await db.reactData.create({ 
+      data: { 
+        chapterId: params.chapterId,
+          urlVideo: urlVideo,
+      }
+  });
+  return NextResponse.json(reactData);
   } catch (error) {
     console.log("[COURSES]", error);
     return new NextResponse("Internal Error", { status: 500 });
