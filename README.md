@@ -54,7 +54,17 @@ $ npx shadcn-ui@latest add popover
 
 $ npx shadcn-ui@latest add input
 
+$ npm i zustand
+
+$ npx shadcn-ui@latest add dropdown-menu
+
+$ npm i react-confetti
+
+$ npx shadcn-ui@latest add table
+
 $ npx shadcn-ui@latest add checkbox
+
+$ npm install @tanstack/react-table
 
 $ npx shadcn-ui@latest add textarea
 

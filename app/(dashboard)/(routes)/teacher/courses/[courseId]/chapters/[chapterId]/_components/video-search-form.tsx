@@ -51,7 +51,8 @@ export const ExternalVideoSearch = ({
       toast.error("Erro ao salvar o vídeo na API");
     }
   };
-
+const incertVideo = initialData.reactData?.urlVideo;
+console.log(incertVideo)
   return (
     <div className="mt-6 border bg-slate-100 rounded-md p-4">
       <input
