@@ -1,6 +1,8 @@
-{"code-runner.executorMap": {
+{
+    "code-runner.clearPreviousOutput": true,
+    "code-runner.executorMap": {
     "javascript": "node",
-    "typescript": "ts-node",
+    "typescript": " npx ts-node --files --transpile-only",
    
 },
     "cSpell.words": [

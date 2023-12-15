@@ -5,7 +5,7 @@ const database = new PrismaClient();
 async function main() {
     try { 
         const categories = [
-            "Pós graduação em Direito Previdenciario",
+            "Pós Graduação em Direito Previdenciario",
             "Direito do Consumidor",
             "Direito Trabalhista",
             "Direito Contratual",

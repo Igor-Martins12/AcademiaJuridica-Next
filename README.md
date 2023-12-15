@@ -86,6 +86,12 @@ https://docs.uploadthing.com/getting-started/appdir
 
 As categorias do curso fica na pasta SCRIPTS
 
+node scripts/seed.ts
+
+npx prisma db push 
+
+npx prisma generate 
+
 se for adicionar mais coisas utilizar o mesmo script so add o novo curso 
 # vídeo
 
