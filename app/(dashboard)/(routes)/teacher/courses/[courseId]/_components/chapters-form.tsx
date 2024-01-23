@@ -63,7 +63,7 @@ export const ChaptersForm = ({
             toast.success("Capítulos atualizado");
             router.refresh();
         } catch { 
-            toast.error("Algo deu errado-form-capítulos");
+            toast.error("Algo deu");
         } finally { 
             setIsUpdating(false);
         }

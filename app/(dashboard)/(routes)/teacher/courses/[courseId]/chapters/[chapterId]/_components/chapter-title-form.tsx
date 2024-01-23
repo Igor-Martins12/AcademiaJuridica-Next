@@ -60,7 +60,7 @@ export const ChapterTitleForm = ({
         toggleEdit();
         router.refresh();
        } catch {
-        toast.error("Algo deu errado{Título-capítulos}");     
+        toast.error("Algo deu errado");     
        }
     }
 
