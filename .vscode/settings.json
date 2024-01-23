@@ -1,11 +1,44 @@
 {
+    "git.openRepositoryInParentFolders": "never",
+    "workbench.colorTheme": "OM Theme (Default Dracula Italic)",
+    "workbench.iconTheme": "material-icon-theme",
+    "window.zoomLevel": 1,
+    "debug.terminal.clearBeforeReusing": true,
+    "code-runner.ignoreSelection": true,
+    "code-runner.runInTerminal": true,
     "code-runner.clearPreviousOutput": true,
     "code-runner.executorMap": {
     "javascript": "node",
     "typescript": " npx ts-node --files --transpile-only",
    
 },
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit",
+        "source.fixAll": "explicit"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "explorer.compactFolders": false,
+    "terminal.integrated.env.windows": {},
+    "console-ninja.featureSet": "Community",
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "explorer.confirmDragAndDrop": false,
+    "editor.wordWrap": "on",
+    "terminal.integrated.tabs.defaultIcon": "github",
+    "editor.tabSize": 2,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "workbench.startupEditor": "none",
+    "console-ninja.toolsToEnableSupportAutomaticallyFor": {
+        "live-server-extension": true,
+        "live-preview-extension": true
+    }
+
+   ,
     "cSpell.words": [
         "nextjs"
     ]
+    
 }
